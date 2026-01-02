@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Celebrations</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" class="logo" alt="Logo">
+  <h1>Event Celebrations</h1>
+  <p>Moments that matter</p>
+</header>
+
+<section>
+  <h2>Recent Celebrated Events</h2>
+  <div class="gallery-grid">
+    <img src="images/event1.jpg" onclick="openLightbox(this.src)">
+    <img src="images/event2.jpg" onclick="openLightbox(this.src)">
+    <img src="images/event3.jpg" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<section>
+  <h2>Upcoming Events</h2>
+  <div id="events"></div>
+</section>
+
+<section>
+  <h2>Register for Updates</h2>
+  <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<footer>© 2026 Event Celebrations</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
